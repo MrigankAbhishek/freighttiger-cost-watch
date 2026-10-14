@@ -1,4 +1,7 @@
+
+
 # Freight Cost Watch - FreightTiger AI Intern case study
+Author: <Mrigank Abhishek> 
 
 An assistant that watches cost per tonne-km on every route, flags rises that look out of the ordinary,
 and checks `context_notes.csv` for a **real, applicable** reason - citing the exact note, or admitting it found none.
