@@ -1,0 +1,52 @@
+[PASS] 1. independent recomputation matches pipeline for every route-week - 728 route-weeks, worst relative diff 5.0e-05
+[PASS] 2. example row Delhi-Jaipur 2024-11-11 reproduced exactly (numbers, flag, note id)
+[PASS] 2. example row Ahmedabad-Mumbai 2025-01-20 reproduced exactly (numbers, flag, note id)
+[PASS] 2. example row Mumbai-Pune 2025-09-15 reproduced exactly (numbers, flag, note id)
+[PASS] 3. P01 Delhi-Jaipur 2024-11-11: expect flagged=yes unexplained
+[PASS] 3. P02 Delhi-Jaipur 2024-11-18: expect flagged=yes unexplained
+[PASS] 3. P03 Ahmedabad-Mumbai 2025-01-20: expect flagged=yes justified N002
+[PASS] 3. P04 Chennai-Bangalore 2025-02-24: expect flagged=yes justified N001
+[PASS] 3. P05 Chennai-Bangalore 2025-03-03: expect flagged=yes justified N001
+[PASS] 3. P06 Chennai-Bangalore 2025-03-10: expect flagged=yes unexplained
+[PASS] 3. P07 Chennai-Bangalore 2025-03-17: expect flagged=yes unexplained
+[PASS] 3. P08 Mumbai-Pune 2025-09-15: expect flagged=yes unexplained
+[PASS] 3. P09 Mumbai-Pune 2025-11-17: expect flagged=yes unexplained
+[PASS] 3. P10 Mumbai-Pune 2025-12-22: expect flagged=yes unexplained
+[PASS] 3. P11 Mumbai-Delhi 2025-05-12: expect flagged=yes justified N003
+[PASS] 3. N01 Mumbai-Delhi 2024-07-29: expect flagged=no
+[PASS] 3. N02 Delhi-Jaipur 2024-05-20: expect flagged=no
+[PASS] 3. N03 Kolkata-Bhubaneswar 2025-06-09: expect flagged=no
+[PASS] 3. N04 Ahmedabad-Mumbai 2025-01-27: expect flagged=no
+[PASS] 3. N05 Chennai-Bangalore 2025-04-21: expect flagged=no
+[PASS] 3. N06 Mumbai-Pune 2025-07-14: expect flagged=no
+[PASS] 3. N07 Delhi-Chennai 2025-08-04: expect flagged=no
+[PASS] 3. N08 Kolkata-Bhubaneswar 2024-09-02: expect flagged=no
+[PASS] 3. labelled set: recall / specificity / verdict accuracy / note-id accuracy all 100% - recall 11/11, specificity 8/8, verdict 11/11, note id 11/11
+     (info) 9 flagged rows are NOT in the labelled set - eyeball them: Delhi-Chennai 2024-02-05, Mumbai-Delhi 2025-06-02, Mumbai-Pune 2025-06-23, Mumbai-Pune 2025-10-20, Mumbai-Pune 2025-10-27, Mumbai-Pune 2025-11-03, Mumbai-Pune 2025-12-01, Mumbai-Pune 2025-12-08, Mumbai-Pune 2025-12-15
+[PASS] 4. A01 wrong route: flood note for another route, same dates - matched=none
+[PASS] 4. A02 wrong window: right route, window ended the day before the week starts - matched=none
+[PASS] 4. A03 wrong window: only 2 days overlap (< 3 required) - matched=none
+[PASS] 4. A04 negation: right route + window but note says costs were not affected - matched=none
+[PASS] 4. A05 no cost statement at all (road resurfaced) - matched=none
+[PASS] 4. A06 all-routes shock cannot explain a route pulling away from its peers - matched=none
+[PASS] 4. A07 note dated after the week (no look-ahead / future note) - matched=none
+[PASS] 4. A08 note far in the past (stale single-week note) - matched=none
+[PASS] 4. A09 unrelated all-routes note with a negation (toll plaza not in dataset) - matched=none
+[PASS] 4. C01 CONTROL: right route, right week, states higher costs -> must be justified - matched=C1
+[PASS] 4. C02 CONTROL: all-routes diesel note, ordinary route (small peer excess) -> justified - matched=C2
+[PASS] 5. effect of N001 classified as 'increase' - got increase
+[PASS] 5. effect of N002 classified as 'increase' - got increase
+[PASS] 5. effect of N003 classified as 'increase' - got increase
+[PASS] 5. effect of N004 classified as 'no_increase' - got no_increase
+[PASS] 5. effect of N005 classified as 'no_increase' - got no_increase
+[PASS] 5. effect of N006 classified as 'no_increase' - got no_increase
+[PASS] 5. effect of N007 classified as 'unknown' - got unknown
+[PASS] 5. effect of N008 classified as 'no_increase' - got no_increase
+[PASS] 5. effect of N009 classified as 'no_increase' - got no_increase
+[PASS] 5. effect of N010 classified as 'no_increase' - got no_increase
+[PASS] 6. audit justified row Ahmedabad-Mumbai 2025-01-20 -> N002
+[PASS] 6. audit justified row Chennai-Bangalore 2025-02-24 -> N001
+[PASS] 6. audit justified row Chennai-Bangalore 2025-03-03 -> N001
+[PASS] 6. audit justified row Mumbai-Delhi 2025-05-12 -> N003
+
+SUMMARY: 49 passed, 0 failed

@@ -1,0 +1,8 @@
+Reproducibility check - 3 independent processes, llm mode = off
+
+IDENTICAL  flagged_routes.csv  sha256=d8688695d60600ae... x1 distinct
+IDENTICAL  weekly_metrics_all.csv  sha256=69d3c5411e1c4a2c... x1 distinct
+IDENTICAL  evidence_trace.csv  sha256=039acc98beeed2db... x1 distinct
+IDENTICAL  flagged_routes.csv with the free-text `reason` column removed (flags, numbers, verdicts, cited note ids)
+
+RESULT: PASS - flags, numbers, verdicts and cited notes match on all 3 runs

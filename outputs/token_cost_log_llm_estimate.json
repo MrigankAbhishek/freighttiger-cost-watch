@@ -1,0 +1,12 @@
+{
+  "mode": "dry-run",
+  "model": "qwen2.5:3b",
+  "llm_calls": 20,
+  "input_tokens": 2932,
+  "output_tokens": 1363,
+  "tokens_are_estimates": true,
+  "fallbacks_to_template": 0,
+  "price_in_per_million_usd": 0.0,
+  "price_out_per_million_usd": 0.0,
+  "estimated_cost_usd": 0.0
+}

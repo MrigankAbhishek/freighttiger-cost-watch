@@ -1,0 +1,20 @@
+case_id,route,week_of,expect_flagged,expect_verdict,expect_note_id,why_this_label
+P01,Delhi-Jaipur,2024-11-11,yes,unexplained,,Sample row from the brief. No Delhi-Jaipur or all-routes note covers Nov 2024 (N007 is May 2024 and mentions no cost rise).
+P02,Delhi-Jaipur,2024-11-18,yes,unexplained,,Second week of the same spike; still no note.
+P03,Ahmedabad-Mumbai,2025-01-20,yes,justified,N002,Sample row from the brief. N002 = festival-week surcharge on this corridor dated that week.
+P04,Chennai-Bangalore,2025-02-24,yes,justified,N001,Flood window Feb 24 - Mar 8 covers the whole week.
+P05,Chennai-Bangalore,2025-03-03,yes,justified,N001,Week Mar 3-9 overlaps the flood window on Mar 3-8 (6 of 7 days).
+P06,Chennai-Bangalore,2025-03-10,yes,unexplained,,Trap: N001 says roads passable again by Mar 9 - window over; cost is still high. N009 says back to normal.
+P07,Chennai-Bangalore,2025-03-17,yes,unexplained,,Trap: N009 (same week) says the route returned to normal - it cannot explain a rise.
+P08,Mumbai-Pune,2025-09-15,yes,unexplained,,Sample row from the brief. Nearest note N006 says demand stable / no disruptions.
+P09,Mumbai-Pune,2025-11-17,yes,unexplained,,N010 says compliance costs absorbed without a rate change - not a reason for a rise.
+P10,Mumbai-Pune,2025-12-22,yes,unexplained,,Creep continues to the end of the data with no supporting note.
+P11,Mumbai-Delhi,2025-05-12,yes,justified,N003,N003: nationwide diesel rise starting the week of 2025-05-05 (all routes, ~5-7%).
+N01,Mumbai-Delhi,2024-07-29,no,,,Decoy note N005: maintenance delays but costs not significantly affected. Nothing to flag.
+N02,Delhi-Jaipur,2024-05-20,no,,,Decoy note N007: road resurfacing, no cost rise. Nothing to flag.
+N03,Kolkata-Bhubaneswar,2025-06-09,no,,,Decoy note N008: no disruptions. Nothing to flag.
+N04,Ahmedabad-Mumbai,2025-01-27,no,,,Week after the festival surcharge: cost back to normal.
+N05,Chennai-Bangalore,2025-04-21,no,,,Well after the flood: cost back to normal.
+N06,Mumbai-Pune,2025-07-14,no,,,Before the Mumbai-Pune creep starts.
+N07,Delhi-Chennai,2025-08-04,no,,,Ordinary week on a stable long route.
+N08,Kolkata-Bhubaneswar,2024-09-02,no,,,Ordinary week.

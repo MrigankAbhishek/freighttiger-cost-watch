@@ -1,0 +1,12 @@
+{
+  "mode": "off",
+  "model": "none",
+  "llm_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "tokens_are_estimates": false,
+  "fallbacks_to_template": 0,
+  "price_in_per_million_usd": 0.0,
+  "price_out_per_million_usd": 0.0,
+  "estimated_cost_usd": 0.0
+}
